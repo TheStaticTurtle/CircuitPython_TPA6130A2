@@ -1,4 +1,4 @@
-# TheStaticTurtle_CircuitPython_TPA6130A2
+# CircuitPython_TPA6130A2
 
 Library to control the tpa6130a2 headphone amplifier
 
