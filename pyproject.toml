@@ -1,0 +1,46 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+    "setuptools-scm",
+]
+
+[project]
+name = "thestaticturtle-circuitpython-tpa6130a2"
+description = "Library to control the tpa6130a2 headphone amplifier"
+version = "0.0.0+auto.0"
+readme = "README.rst"
+authors = [
+    {name = "Samuel (TheStaticTurtle)", email = "samuel@☺tugler.fr"}
+]
+urls = {Homepage = "https://github.com/TheStaticTurtle/TheStaticTurtle_CircuitPython_TPA6130A2"}
+keywords = [
+    "adafruit",
+    "blinka",
+    "circuitpython",
+    "micropython",
+    "tpa6130a2",
+    "amplifier",
+    "i2c",
+    "headphone",
+    "audio",
+]
+license = {text = "MIT"}
+classifiers = [
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Embedded Systems",
+    "Topic :: System :: Hardware",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+]
+dynamic = ["dependencies", "optional-dependencies"]
+
+[tool.setuptools]
+# TODO: IF LIBRARY FILES ARE A PACKAGE FOLDER,
+#       CHANGE `py_modules = ['...']` TO `packages = ['...']`
+py-modules = ["thestaticturtle_tpa6130a2"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+optional-dependencies = {optional = {file = ["optional_requirements.txt"]}}
